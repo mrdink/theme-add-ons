@@ -1,0 +1,101 @@
+/*
+   Pre-loader
+   ========================================================================== */
+.loading {
+    background-color: #fafafa;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    .admin-bar & {
+        top: 32px;
+        @media screen and (max-width: 782px) {
+            top: 46px;
+        }
+    }
+}
+
+.loading-bar {
+    background-color: #fff;
+    height: 1rem;
+    position: relative;
+}
+
+.loading-progress {
+    animation: loading 1.5s 1 forwards;
+    background-color: #1abc9c;
+    height: 1rem;
+    left: 0;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    -webkit-animation: loading 1.5s 1 forwards;
+    -moz-animation: loading 1.5s 1 forwards;
+    -ms-animation: loading 1.5s 1 forwards;
+    -o-animation: loading 1.5s 1 forwards;
+}
+
+@keyframes loading {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+@-webkit-keyframes loading {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+@-moz-keyframes loading {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+@-ms-keyframes loading {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+@-o-keyframes loading {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+.loading-logo {
+    bottom: 0;
+    height: auto;
+    left: 0;
+    margin: auto;
+    opacity: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 150px;
+}

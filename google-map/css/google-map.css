@@ -1,0 +1,14 @@
+/*
+   Google Map
+   ========================================================================== */
+#googleMap {
+    height: 400px;
+}
+
+#googleMap iframe {
+    width: 100%;
+}
+
+#googleMap img {
+    max-width: none;
+}

@@ -1,0 +1,12 @@
+.site-header .site-logo {
+    width: 350px;
+    height: 125px;
+    -webkit-transition: height 500ms, width 500ms;
+    -o-transition: height 500ms, width 500ms;
+    transition: height 500ms, width 500ms;
+}
+
+.site-header .site-logo.on-scroll {
+    width: 175px;
+    height: auto;
+}
